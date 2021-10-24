@@ -2,8 +2,6 @@ import arrays
 import random
 
 def random_array(size, min_value = 0, max_value = None):
-    random.seed(0)
-
     #return None
     
     an_array = arrays.Array(size)

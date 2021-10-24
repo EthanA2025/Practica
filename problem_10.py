@@ -1,4 +1,3 @@
-import re
 
 def even_letters(filename):
     with open(filename) as file:
@@ -9,6 +8,7 @@ def even_letters(filename):
 
             for i in range(0, len(line)):
                 if i % 2 == 0:
+
                     result += line[i]
     
     return result

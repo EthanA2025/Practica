@@ -7,6 +7,6 @@ def linear_search_rec(an_array, target, index=0): # set parameters for an_array 
         return linear_search_rec(an_array, target, index + 1) # Otherwise if the value isn't equal increase index by 1 so we go through each index of the array and try to find if there is a value that is equal
     
 def main():
-    print(linear_search_rec([1,2,5,10,6], 12, 0))
+    print(linear_search_rec([1,2,5,10,6], 10, 0))
 
 main()
