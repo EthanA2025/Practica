@@ -4,16 +4,18 @@ def average_words(filename):
     with open(filename) as file:
         for line in file:
             if line.strip() == "":
-                    continue
+                continue
             else:
                 stripped = line.strip()
                 words = line.split()
                 total_words += len(words)
                 lines += 1
+    if total_words == 0 and lines == 0:
+        raise ValueError("Invalid file")
     
     return total_words / lines
 
 def main():
-    print(average_words(".txt"))
+    print(average_words("none.txt"))
     
 main()
